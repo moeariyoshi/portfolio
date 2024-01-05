@@ -1,0 +1,14 @@
+text {
+  position: absolute;                  /* added */
+  bottom:0;                           /* added */
+  left:0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container{
+  min-height: 100vh;
+}

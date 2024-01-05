@@ -1,0 +1,66 @@
+/*.gallery{*/
+/*  scroll-padding-top: 15vh;*/
+/*  scroll-snap-type: x mandatory;*/
+/*  overflow-x: scroll;*/
+/*  display: flex;*/
+/*}*/
+/*.container{*/
+/*  min-height: 100vh;*/
+/*}*/
+/*section {*/
+/*  margin-top: 50px;*/
+/*  scroll-snap-align: center;*/
+/*  height: 70vh;*/
+/*  width: 80vw;*/
+/*  background-color: dimgrey;*/
+/*}*/
+
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-family: monospace;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  overflow: auto;
+  flex: none;
+}
+
+.container.x {
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
+}
+
+
+/* scroll-snap */
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x.container > div {
+  line-height: 128px;
+  font-size: 64px;
+  width: 100%;
+  height: 128px;
+}
+
+/* coloration */
+.container > div:nth-child(even) {
+  background-color: grey;
+}
+
+.container > div:nth-child(odd) {
+  background-color: dimgrey;
+}

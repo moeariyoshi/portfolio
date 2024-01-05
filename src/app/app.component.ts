@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ResumeService } from "./shared/resume.service";
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+  //constructor(private resume: ResumeService){}
 }

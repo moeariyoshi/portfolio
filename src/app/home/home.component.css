@@ -1,0 +1,27 @@
+
+
+html {
+  margin-top: 30px;
+  display: flex;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+/*.container > div:nth-child(even) {*/
+/*  display: block;*/
+/*  background-color: #87ea87;*/
+/*}*/
+
+/*.container > div:nth-child(odd) {*/
+/*  display: block;*/
+/*  background-color: #87ccea;*/
+/*}*/
+
+
+
+

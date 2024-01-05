@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>My Timeline</h1>
+      <app-timeline-item *ngFor="let timelineItem of timeline"
+                         [timeline]=timelineItem
+                         data-aos="fade-right"
+      ></app-timeline-item>
+    </div>
+    <div class="col-md-6" data-aos="fade-up">
+      <img id="selfie" src="../../assets/img_0682.jpg" width="500" alt="picture of me!"/>
+    </div>
+  </div>
+</div>
+
